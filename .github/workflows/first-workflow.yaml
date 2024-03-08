@@ -1,0 +1,16 @@
+name: First Workflow
+on: [push]
+
+job:
+  run-shell-cmd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello World"
+      - name: Multiline command
+        run: |
+          node -v
+          npm -v
+      - name: Pusher name
+        run: echo "Pusher name is => ${{ github.event.pusher.email }}"
+
