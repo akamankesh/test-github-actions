@@ -11,6 +11,7 @@ job:
         run: |
           node -v
           npm -v
+          java -v
       - name: Pusher name
         run: echo "Pusher name is => ${{ github.event.pusher.email }}"
 
