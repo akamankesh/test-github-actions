@@ -1,7 +1,7 @@
 name: First Workflow
 on: [push]
 
-job:
+jobs:
   run-shell-cmd:
     runs-on: ubuntu-latest
     steps:
